@@ -1,0 +1,11 @@
+--- libdjinterop-0.21.0/CMakeLists.txt.orig	2024-04-04 21:50:46.000000000 +0200
++++ libdjinterop-0.21.0/CMakeLists.txt	2024-09-28 21:16:12.360796151 +0200
+@@ -212,7 +212,7 @@ endif()
+ 
+ # CMake package config export.
+ include(CMakePackageConfigHelpers)
+-set(DJINTEROP_INSTALL_CMAKEDIR "lib/cmake/DjInterop")
++set(DJINTEROP_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/DjInterop")
+ install(EXPORT DjInteropTargets
+         FILE DjInteropTargets.cmake
+         NAMESPACE DjInterop::

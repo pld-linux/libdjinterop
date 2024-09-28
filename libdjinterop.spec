@@ -8,6 +8,7 @@ Group:		Libraries
 #Source0Download: https://github.com/xsco/libdjinterop/tags
 Source0:	https://github.com/xsco/libdjinterop/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	1b9fb484069230302a2beeeb42867a45
+Patch0:		%{name}-cmake.patch
 URL:		https://github.com/xsco/libdjinterop
 BuildRequires:	boost-devel >= 1.65.1
 BuildRequires:	cmake >= 3.10
@@ -50,6 +51,7 @@ Pliki nagłówkowe biblioteki DjInterop.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 install -d build
