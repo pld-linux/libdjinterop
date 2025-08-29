@@ -1,13 +1,13 @@
 Summary:	C++ library providing access to DJ record libraries
 Summary(pl.UTF-8):	Biblioteka C++ zapewniająca dostęp do bibliotek płyt dla DJ-ów
 Name:		libdjinterop
-Version:	0.21.0
+Version:	0.26.1
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/xsco/libdjinterop/tags
 Source0:	https://github.com/xsco/libdjinterop/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	1b9fb484069230302a2beeeb42867a45
+# Source0-md5:	66159683690bc3ed12314ee23d10aa7e
 Patch0:		%{name}-cmake.patch
 URL:		https://github.com/xsco/libdjinterop
 BuildRequires:	boost-devel >= 1.65.1
